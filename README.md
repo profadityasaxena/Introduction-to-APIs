@@ -87,8 +87,3 @@ Each module is a mini-application built using data from publicly available APIs.
 | 48 | What are `labels` in Chart.js? | Categories or names for data points on a chart. |
 | 49 | Can you update a Chart.js chart after it’s rendered? | Yes, using chart.update() or destroying and redrawing. |
 | 50 | How do you document an API project? | With a clear README including usage, setup, and visuals. |
-
----
-
-Would you like the `index.html` and `script.js` for Module 1 next? Or shall I generate a GitHub-compatible landing `index.html` for this course homepage first?
-# Introduction-to-APIs
