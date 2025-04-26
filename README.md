@@ -33,6 +33,15 @@ Each module is a mini-application built using data from publicly available APIs.
 
 ---
 
+## 🌤️ Module 1: Weather Dashboard
+
+In this project, we built a simple web-based weather dashboard using HTML, CSS, JavaScript, and Chart.js. The application allows users to input any city name and retrieve real-time weather data from the OpenWeatherMap API. The current temperature, weather condition, and icon are displayed dynamically on the page.
+
+We also visualized a 5-day temperature trend using a line chart powered by Chart.js. The API key was stored securely outside the project folder to avoid exposing it publicly. This module introduced the fundamentals of working with public APIs, handling asynchronous data, and presenting insights through charts.
+
+
+---
+
 ## ❓ 50 Short Answer Theory Questions with Answers
 
 | No. | Question | Answer |
