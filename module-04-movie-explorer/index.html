@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🎬 Movie Explorer</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- 🔐 API key loaded from config.js outside GitHub repo -->
+  <script src="../../API_Keys/IntroToAPI/config.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <h1>🎬 Movie Explorer</h1>
+    <p>Search for any movie by title using the OMDb API</p>
+
+    <div class="search-box">
+      <input type="text" id="movieInput" placeholder="Enter movie title..." />
+      <button id="searchBtn">Search</button>
+    </div>
+
+    <div id="movieResult" class="movie-result">
+      <!-- Movie info will be injected here -->
+    </div>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
