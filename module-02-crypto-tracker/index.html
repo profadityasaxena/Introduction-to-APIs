@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Crypto Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>📈 Cryptocurrency Tracker</h1>
+    <p>Live prices for the top 10 cryptocurrencies by market cap (via CoinGecko API)</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Logo</th>
+          <th>Name</th>
+          <th>Price (USD)</th>
+          <th>24h Change</th>
+        </tr>
+      </thead>
+      <tbody id="cryptoTableBody">
+        <!-- Rows will be inserted here by script.js -->
+      </tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
