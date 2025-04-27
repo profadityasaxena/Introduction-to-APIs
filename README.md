@@ -33,6 +33,116 @@ Each module is a mini-application built using data from publicly available APIs.
 
 ---
 
+# 🧩 Introduction to API-Based Architecture
+
+An API-based architecture is a design approach where all components of an application — frontend, backend, data, and services — communicate primarily through APIs. This enables modularity, scalability, and integration across internal and external systems.
+
+---
+
+## 🛠️ Core Components of an API Architecture
+
+| Layer | Role |
+|-------|------|
+| **API Gateway** | Entry point for all clients (handles routing, throttling, auth) |
+| **Service Layer** | Business logic exposed via REST or GraphQL APIs |
+| **Data Layer** | Databases or third-party APIs that services consume |
+| **Client Applications** | Web, mobile, or other systems that call the APIs |
+
+---
+
+## 📐 Key Design Considerations
+
+### 1. **API Contract Definition**
+- Use OpenAPI/Swagger to document endpoints, input/output formats, and status codes
+- Design with consumers in mind (clear naming, consistent responses)
+
+### 2. **Stateless Communication**
+- Each API call should be self-contained
+- No session state stored on the server
+
+### 3. **Authentication & Authorization**
+- Use tokens (e.g., JWT, OAuth 2.0) for secure access
+- Role-based access control if APIs serve multiple client types
+
+### 4. **Rate Limiting & Throttling**
+- Protect APIs from misuse or overload via API gateways (e.g., Kong, AWS API Gateway)
+
+### 5. **Versioning**
+- Maintain backward compatibility with versioned endpoints (e.g., `/api/v1/`)
+
+---
+
+## 🔄 Request-Response Flow
+
+Frontend (React/JS) ➜ API Gateway ➜ Auth Service ➜ Business Service ➜ Database  
+                    ↘ Third-Party APIs
+
+---
+
+## ⚙️ Tools & Technologies
+
+| Area | Examples |
+|------|----------|
+| API Development | Node.js/Express, Flask, FastAPI, Spring Boot |
+| API Testing | Postman, Insomnia, curl |
+| API Gateway | Kong, NGINX, Amazon API Gateway |
+| Documentation | Swagger (OpenAPI), Redoc |
+| Authentication | OAuth 2.0, JWT, Firebase Auth |
+
+---
+
+## 📦 Best Practices
+
+- ✅ Use RESTful design (or GraphQL if needed)
+- ✅ Always return meaningful HTTP status codes
+- ✅ Log all API activity (request, response, latency)
+- ✅ Handle and report errors consistently
+- ✅ Cache frequently requested data
+- ✅ Separate internal and public APIs
+
+---
+
+## 🚀 Benefits of API-First Architecture
+
+- Frontend and backend teams work independently
+- Easier third-party integrations
+- Facilitates microservices and modular scaling
+- Cloud-native and serverless compatible
+
+---
+
+## 📁 Folder Structure Example (Node.js)
+
+```
+/api
+  /v1
+    /users
+      - users.routes.js
+      - users.controller.js
+      - users.service.js
+/app.js
+/config/
+  - db.js
+  - env.js
+/docs/
+  - openapi.yaml
+/tests/
+  - users.test.js
+```
+
+---
+
+## 🧪 Before Going to Production
+
+- ✅ Enforce HTTPS
+- ✅ Enable CORS properly
+- ✅ Monitor performance and errors (e.g., Datadog, Prometheus, Sentry)
+- ✅ Run security scans (e.g., OWASP ZAP)
+- ✅ Write unit and integration tests
+
+
+---
+
 ## 🌤️ Module 1: Weather Dashboard
 
 In this project, we built a simple web-based weather dashboard using HTML, CSS, JavaScript, and Chart.js. The application allows users to input any city name and retrieve real-time weather data from the OpenWeatherMap API. The current temperature, weather condition, and icon are displayed dynamically on the page.
