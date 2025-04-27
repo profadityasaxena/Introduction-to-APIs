@@ -45,6 +45,12 @@ In this project, we created a real-time cryptocurrency tracker using HTML, CSS, 
 
 The primary goal of this module is to gain hands-on experience working with JSON data from an open financial API and render it dynamically in the browser. Students also learn to format currency, handle live data refreshes, and visually highlight gains and losses. This project sets the stage for more advanced charting in upcoming modules.
 
+## 🌌 Module 3: NASA Picture of the Day Viewer
+
+This module explores how to fetch and display image-based data from a public API. Students use the NASA Astronomy Picture of the Day (APOD) API to retrieve a high-resolution image (or video), its title, and a short explanation. The viewer updates dynamically based on the date selected, allowing exploration of NASA’s space image archive.
+
+The goal of this project is to practice working with query parameters, image elements, and textual metadata in a single API response. This module emphasizes layout techniques, proper date formatting, and handling edge cases (like days without a picture). It also introduces working with APIs that provide mixed media types (images and YouTube embeds).
+
 
 ---
 
