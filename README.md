@@ -51,6 +51,12 @@ This module explores how to fetch and display image-based data from a public API
 
 The goal of this project is to practice working with query parameters, image elements, and textual metadata in a single API response. This module emphasizes layout techniques, proper date formatting, and handling edge cases (like days without a picture). It also introduces working with APIs that provide mixed media types (images and YouTube embeds).
 
+## 🎬 Module 4: Movie Explorer
+
+This module introduces learners to building a movie search interface using the OMDb (Open Movie Database) API. Students create an interactive application that allows users to search for movies by title and view relevant details such as poster, release year, genre, IMDb rating, and a brief plot summary.
+
+The objective of this project is to strengthen skills in handling user input, working with API keys, and dynamically updating the DOM based on search results. This module also teaches how to gracefully handle missing or incomplete data, and introduces best practices for managing search-based API endpoints in frontend applications.
+
 
 ---
 
