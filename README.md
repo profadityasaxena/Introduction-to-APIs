@@ -39,6 +39,12 @@ In this project, we built a simple web-based weather dashboard using HTML, CSS, 
 
 We also visualized a 5-day temperature trend using a line chart powered by Chart.js. The API key was stored securely outside the project folder to avoid exposing it publicly. This module introduced the fundamentals of working with public APIs, handling asynchronous data, and presenting insights through charts.
 
+## 📈 Module 2: Cryptocurrency Tracker
+
+In this project, we created a real-time cryptocurrency tracker using HTML, CSS, and JavaScript. The app connects to the public CoinGecko API to fetch market data for the top 10 cryptocurrencies based on market capitalization. For each coin, we display its name, symbol, logo, current price in USD, and 24-hour percentage change.
+
+The primary goal of this module is to gain hands-on experience working with JSON data from an open financial API and render it dynamically in the browser. Students also learn to format currency, handle live data refreshes, and visually highlight gains and losses. This project sets the stage for more advanced charting in upcoming modules.
+
 
 ---
 
